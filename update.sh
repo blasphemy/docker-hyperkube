@@ -31,6 +31,7 @@ download_hyperkube()
     tar xvf kubernetes.tar.gz
     tar xvf kubernetes/server/kubernetes-server-linux-amd64.tar.gz -C kube-binaries
     cp kube-binaries/kubernetes/server/bin/hyperkube build
+    cp kube-binaries/kubernetes/server/bin/kubectl build
     rm -rf kubernetes
     rm -rf kube-binaries
 }

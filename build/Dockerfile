@@ -1,4 +1,6 @@
 FROM base/archlinux
 COPY hyperkube /hyperkube
+COPY kubectl /kubectl
 RUN chmod u+x /hyperkube
-CMD ["/bin/bash"]
+RUN chmod u+x /kubectl
+CMD ["/kubectl"]

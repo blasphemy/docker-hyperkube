@@ -1,5 +1,5 @@
 FROM alpine
-ARG HYPERKUBE_VERSION=v1.2.5
+ARG HYPERKUBE_VERSION=v1.3.0
 ARG GLIBC_VERSION=2.23-r3
 RUN apk --no-cache add ca-certificates wget iptables \
  && wget -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub \

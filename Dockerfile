@@ -1,5 +1,5 @@
 FROM blasphemy/alpine-glibc
-ARG HYPERKUBE_VERSION=v1.3.0
+ARG HYPERKUBE_VERSION=v1.2.5
 RUN apk --no-cache add ca-certificates wget iptables \
  && wget https://github.com/kubernetes/kubernetes/releases/download/${HYPERKUBE_VERSION}/kubernetes.tar.gz -O kubernetes.tar.gz \
  && mkdir kube-binaries \
